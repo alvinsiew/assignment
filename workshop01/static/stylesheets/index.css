@@ -1,0 +1,26 @@
+body  {
+  min-height:100%;
+  background-image: url("/static/stylesheets/background.jpeg"), linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3));
+  background-size:cover
+}
+
+.quote {
+  font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+  font-size: 3rem;
+  color: black;
+}
+
+.url {
+  font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+  font-size: 2rem;
+  color: black;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}​
