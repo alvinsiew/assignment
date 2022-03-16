@@ -5,6 +5,7 @@ import (
 	"html/template"
 	"math/rand"
 	"net/http"
+	"os"
 	"time"
 )
 
@@ -14,6 +15,7 @@ type Message struct {
 }
 
 func main() {
+   port := os.Getenv("PORT")
    rand.Seed(time.Now().Unix())
    quotes := []string{
     "Logic will get you from A to B. Imagination will take you everywhere.",
@@ -40,5 +42,5 @@ func main() {
    })
 
    fmt.Println("Listening");
-   fmt.Println(http.ListenAndServe(":8080", nil));
+   fmt.Println(http.ListenAndServe(":"+port, nil));
 }
